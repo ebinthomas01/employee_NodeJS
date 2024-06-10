@@ -5,7 +5,7 @@ import axios from 'axios'
 const ViewAll = () => {
     const [data,changeData] =useState([])
         const fetchData=()=>{
-            axios.get("https://anishpdm.github.io/dummy-api-new/student.json").then((response)=>{
+            axios.get("https://courseapplogix.onrender.com/getdata  ").then((response)=>{
                 changeData(response.data)
             }
         ).catch().finally()
@@ -16,7 +16,7 @@ const ViewAll = () => {
   return (
     <div>
         <NavBar/>
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <table class="table">
